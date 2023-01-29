@@ -21,7 +21,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter' !important;
+  font-family: 'Inter', 'Roboto', sans-serif !important;
 }
 
 .self-marker {
@@ -54,7 +54,7 @@ body {
 }
 
 .swiper-pagination {
-  margin-bottom: 20vh;
+  margin-bottom: 200px;
 }
 
 .react-modal-sheet-container {
