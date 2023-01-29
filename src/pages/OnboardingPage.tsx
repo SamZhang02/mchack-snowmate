@@ -83,8 +83,8 @@ function OnboardingPage() {
 
               {index === 0 && (
                 <>
-                  <Box as={motion.div} pos="absolute" top="-70vw" left="-70vw" w="150vw" h="150vw" bg="#FFF1E9" rounded="full" layout layoutId="bg-blob1" />
-                  <Box as={motion.div} pos="absolute" bottom="-70vw" right="-70vw" w="150vw" h="150vw" bg="#FFF1E9" rounded="full" layout layoutId="bg-blob2" />
+                  <Box as={motion.div} pos="absolute" top="-70vw" left="-70vw" w="150vw" h="150vw" bg="#FFF1E9" rounded="full" />
+                  <Box as={motion.div} pos="absolute" bottom="-70vw" right="-70vw" w="150vw" h="150vw" bg="#FFF1E9" rounded="full" />
                 </>
               )}
             </VStack>
@@ -93,10 +93,10 @@ function OnboardingPage() {
           </Container>
         </SwiperSlide>
         <SwiperSlide>
-          <Container h="100vh" textAlign="center" py={20} bg="#04113E" p={0}>
+          <Container maxW="full" h="100vh" textAlign="center" py={20} bg="#04113E" p={0}>
             {index === 1 && <Image as={motion.img} pos="absolute" top={10} left="50%" w={200} h={45} ml={-100} src={LogoImg} layout layoutId="logo" zIndex={100} />}
             <VStack pt={100} pos="relative" bg="white" h="85vh" borderBottomRadius={40} overflow="hidden">
-              <Image src={Img2} w="90%" zIndex={1} />
+              <Image src={Img2} w="90%" zIndex={1} maxW={350} />
 
               <Text zIndex={1} fontWeight="bold">
                 Location-Based Suggestions
@@ -108,18 +108,18 @@ function OnboardingPage() {
 
               {index === 1 && (
                 <>
-                  <Box as={motion.div} pos="absolute" top="-50vw" left="-50vw" w="100vw" h="100vw" bg="#FFF1E9" rounded="full" layout layoutId="bg-blob1" />
-                  <Box as={motion.div} pos="absolute" bottom="-50vw" right="-50vw" w="100vw" h="100vw" bg="#FFF1E9" rounded="full" layout layoutId="bg-blob2" />
+                  <Box as={motion.div} pos="absolute" top="-50vw" left="-50vw" w="100vw" h="100vw" bg="#FFF1E9" rounded="full" />
+                  <Box as={motion.div} pos="absolute" bottom="-50vw" right="-50vw" w="100vw" h="100vw" bg="#FFF1E9" rounded="full" />
                 </>
               )}
             </VStack>
           </Container>
         </SwiperSlide>
         <SwiperSlide>
-          <Container h="100vh" textAlign="center" py={20} bg="#04113E" p={0}>
+          <Container maxW="full" h="100vh" textAlign="center" py={20} bg="#04113E" p={0}>
             {index === 2 && <Image as={motion.img} pos="absolute" top={10} left="50%" w={200} h={45} ml={-100} src={LogoImg} layout layoutId="logo" zIndex={100} />}
             <VStack pt={100} pos="relative" bg="white" h="85vh" borderBottomRadius={40} overflow="hidden">
-              <Image src={Img3} w="90%" zIndex={1} />
+              <Image src={Img3} w="90%" zIndex={1} maxW={350} />
 
               <Text zIndex={1} fontWeight="bold">
                 Quick and Reliable Service
@@ -131,18 +131,18 @@ function OnboardingPage() {
 
               {index === 2 && (
                 <>
-                  <Box as={motion.div} pos="absolute" bottom="-50vw" right="-50vw" w="100vw" h="100vw" bg="#FFF1E9" rounded="full" layout layoutId="bg-blob1" />
-                  <Box as={motion.div} pos="absolute" top="-60vw" left="-60vw" w="120vw" h="120vw" bg="#FFF1E9" rounded="full" layout layoutId="bg-blob2" />
+                  <Box as={motion.div} pos="absolute" bottom="-50vw" right="-50vw" w="100vw" h="100vw" bg="#FFF1E9" rounded="full" />
+                  <Box as={motion.div} pos="absolute" top="-60vw" left="-60vw" w="120vw" h="120vw" bg="#FFF1E9" rounded="full" />
                 </>
               )}
             </VStack>
           </Container>
         </SwiperSlide>
         <SwiperSlide>
-          <Container h="100vh" textAlign="center" py={20} bg="#04113E" p={0}>
+          <Container maxW="full" h="100vh" textAlign="center" py={20} bg="#04113E" p={0}>
             {index === 3 && <Image as={motion.img} pos="absolute" top={10} left="50%" w={200} h={45} ml={-100} src={LogoImg} layout layoutId="logo" zIndex={100} />}
             <VStack pt={100} pos="relative" bg="white" h="85vh" borderBottomRadius={40} overflow="hidden">
-              <Image src={Img4} w="90%" zIndex={1} />
+              <Image src={Img4} w="90%" zIndex={1} maxW={350} />
 
               <Text zIndex={1} fontWeight="bold">
                 That's it!
@@ -154,8 +154,8 @@ function OnboardingPage() {
 
               {index === 3 && (
                 <>
-                  <Box as={motion.div} pos="absolute" bottom="-100vw" right="-100vw" w="170vw" h="170vw" bg="#FFF1E9" rounded="full" layout layoutId="bg-blob1" />
-                  <Box as={motion.div} pos="absolute" top="-30vw" left="-30vw" w="140vw" h="140vw" bg="#FFF1E9" rounded="full" layout layoutId="bg-blob2" />
+                  <Box as={motion.div} pos="absolute" bottom="-100vw" right="-100vw" w="170vw" h="170vw" bg="#FFF1E9" rounded="full" />
+                  <Box as={motion.div} pos="absolute" top="-30vw" left="-30vw" w="140vw" h="140vw" bg="#FFF1E9" rounded="full" />
                 </>
               )}
             </VStack>
