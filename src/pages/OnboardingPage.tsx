@@ -57,7 +57,7 @@ function OnboardingPage() {
         </HStack>
 
         <SwiperSlide>
-          <Container h="100vh" textAlign="center" py={20} bg="#04113E" p={0}>
+          <Container maxW="full" h="100vh" textAlign="center" py={20} bg="#04113E" p={0}>
             <VStack pt={50} pos="relative" bg="white" h="85vh" borderBottomRadius={40} overflow="hidden">
               <Image src={Img} zIndex={1} />
 

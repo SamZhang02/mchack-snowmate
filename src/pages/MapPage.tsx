@@ -147,7 +147,7 @@ function MapPage() {
       <Image pos="fixed" top={3} left="50%" w={150} transform="translateX(-50%)" src={LogoImg} zIndex={100} />
       <Box
         pos="fixed"
-        bottom={{ base: 230, lg: 10 }}
+        bottom={{ base: 230, md: 10 }}
         right={3}
         bg="white"
         p={3}
@@ -183,12 +183,12 @@ function MapPage() {
       </Popover>
       <Box ref={mapContainer} pos="absolute" top={0} left={0} w="100%" h="100%" />
 
-      <NativeSheet ref={sheetRef} maxW={index === 1 ? 600 : 450} w="100%" m={{ base: 0, lg: index === 2 ? '50px 40px' : '50px 200px' }} borderRadius={20} transition="width 0.3s ease-in-out, margin 0.3s ease-in-out" isOpen={true} snapPoints={[800, 500, 200]} initialSnap={2} onClose={() => {}}>
+      <NativeSheet ref={sheetRef} maxW={{ base: 500, lg: index === 1 ? 600 : 450 }} w="100%" m={{ base: 'auto', lg: index === 2 ? '50px 40px' : '50px 200px' }} borderRadius={20} transition="width 0.3s ease-in-out, margin 0.3s ease-in-out" isOpen={true} snapPoints={[800, 200]} initialSnap={1} onClose={() => {}}>
         <Sheet.Container>
-          <Sheet.Header />
+          <Sheet.Header onTap={() => sheetRef.current!.snapTo(0)} />
           <Sheet.Content>
             {index === 0 && (
-              <VStack maxW={450} w="100%" p={5} spacing={3} pb={100}>
+              <VStack maxW={500} w="100%" h="100%" p={5} spacing={3} pb={100}>
                 <Heading fontSize={26} textAlign="center">
                   Need a snow removal?
                 </Heading>
@@ -283,7 +283,7 @@ function MapPage() {
               </VStack>
             )}
             {index === 1 && (
-              <VStack align="flex-start" px={5}>
+              <VStack align="flex-start" px={5} h="100%">
                 <Button onClick={() => setIndex(0)} bg="#f3f3f3">
                   <svg style={{ width: 24, height: 24 }} viewBox="0 0 24 24">
                     <path fill="#222" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
@@ -345,7 +345,7 @@ function MapPage() {
                       reviews: Math.floor(Math.random() * (10 - 6 + 1) + 6) / 2,
                       time: Math.floor(Math.random() * (15 - 8 + 1) + 8),
                     });
-                    sheetRef.current!.snapTo(2);
+                    sheetRef.current!.snapTo(1);
                     setLoadingRoute(true);
 
                     setTimeout(() => {
